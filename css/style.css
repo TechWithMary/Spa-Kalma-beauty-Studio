@@ -25,7 +25,7 @@ h2,
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.2;
-  color: #705848;
+  color: #6F5C4B;
 }
 
 h1 {
@@ -52,7 +52,7 @@ p {
 }
 
 a {
-  color: #705848;
+  color: #6F5C4B;
 }
 
 a:hover {
@@ -89,12 +89,12 @@ a:hover {
 }
 
 .boton:hover {
-  background-color: #705848;
+  background-color: #6F5C4B;
   color: #FBF7F2;
 }
 
 .boton-whatsapp {
-  background-color: #705848;
+  background-color: #6F5C4B;
   color: #FBF7F2;
 }
 
@@ -118,7 +118,7 @@ textarea:focus {
 
 /* Barra superior */
 .barra-superior {
-  background-color: #705848;
+  background-color: #6F5C4B;
   color: #FBF7F2;
   font-size: 13px;
 }
@@ -163,7 +163,7 @@ textarea:focus {
   top: 0;
   z-index: 10;
   background-color: #FBF7F2;
-  border-bottom: 2px solid #B89038;
+  border-bottom: 2px solid #B39049;
   box-shadow: 0 6px 20px rgba(62, 50, 40, 0.08);
 }
 
@@ -172,20 +172,21 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  min-height: 72px;
+  min-height: 92px;
 }
 
 .marca {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
   text-decoration: none;
   color: #3E3228;
 }
 
 .marca img {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   object-fit: cover;
   border: 1px solid #C4A070;
   border-radius: 12px;
@@ -198,11 +199,12 @@ textarea:focus {
   letter-spacing: 0.18em;
   line-height: 1.1;
   text-transform: uppercase;
-  color: #705848;
+  color: #6F5C4B;
 }
 
 .marca-texto span {
   display: block;
+  white-space: nowrap;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -235,8 +237,8 @@ textarea:focus {
 
 .menu a:hover {
   background-color: #EFE3D3;
-  color: #705848;
-  border-bottom: 2px solid #B89038;
+  color: #6F5C4B;
+  border-bottom: 2px solid #B39049;
 }
 
 .boton-menu {
@@ -270,7 +272,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #705848;
+  color: #6F5C4B;
 }
 
 .hero-texto p {
@@ -292,6 +294,7 @@ section {
 
 /* Nosotros */
 .nosotros,
+.masajes,
 .productos,
 .facial,
 .unas,
@@ -376,7 +379,7 @@ section {
   margin: 6px 0 10px;
   font-size: 24px;
   font-weight: 700;
-  color: #705848;
+  color: #6F5C4B;
 }
 
 .producto .boton {
@@ -410,7 +413,7 @@ section {
 .valor {
   font-size: 20px;
   font-weight: 700;
-  color: #705848;
+  color: #6F5C4B;
   white-space: nowrap;
 }
 
@@ -464,6 +467,51 @@ section {
   margin-bottom: 0;
 }
 
+/* Masajes */
+.masajes .lista-precios {
+  max-width: 560px;
+}
+
+/* Flyers de facial y uñas */
+.flyer {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(62, 50, 40, 0.12);
+}
+
+.precio-facial {
+  margin: 0 0 16px;
+  font-size: 28px;
+}
+
+.facial-interno,
+.unas-interno {
+  align-items: flex-start;
+}
+
+.beneficios {
+  margin: 0 0 24px;
+  padding-left: 18px;
+}
+
+.beneficios li {
+  margin-bottom: 6px;
+}
+
+.unas-interno {
+  display: flex;
+  gap: 48px;
+}
+
+.unas-imagen {
+  flex: 2;
+}
+
+.unas-texto {
+  flex: 3;
+}
+
 /* Servicios */
 .servicios-contenedor {
   display: flex;
@@ -512,7 +560,7 @@ section {
 }
 
 .tabla th {
-  background-color: #705848;
+  background-color: #6F5C4B;
   color: #FBF7F2;
   font-weight: 600;
 }
@@ -574,7 +622,7 @@ section {
 .campo select,
 .campo textarea {
   width: 100%;
-  border: 1px solid #705848;
+  border: 1px solid #6F5C4B;
   border-radius: 12px;
   background-color: #FBF7F2;
   color: #3E3228;
@@ -590,12 +638,12 @@ section {
 .ayuda {
   margin-top: 10px;
   font-size: 14px;
-  color: #705848;
+  color: #6F5C4B;
 }
 
 /* Pie de página */
 .pie-pagina {
-  border-top: 2px solid #B89038;
+  border-top: 2px solid #B39049;
   padding-top: 32px;
   font-size: 15px;
 }
@@ -611,10 +659,13 @@ section {
   margin: 0 0 6px;
 }
 
-.pie-nombre {
-  font-size: 20px;
-  font-weight: 700;
-  color: #705848;
+.pie-logo {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 10px;
+  border: 1px solid #C4A070;
+  border-radius: 12px;
 }
 
 .derechos {
@@ -674,6 +725,11 @@ section {
     position: static;
   }
 
+  .marca img {
+    width: 56px;
+    height: 56px;
+  }
+
   section {
     scroll-margin-top: 0;
   }
@@ -690,6 +746,7 @@ section {
   .hero-interno,
   .nosotros-interno,
   .facial-interno,
+  .unas-interno,
   .unas-columnas,
   .contacto-interno,
   .pie-interno {
@@ -703,6 +760,14 @@ section {
   .facial-imagen img {
     height: 320px;
     object-fit: cover;
+  }
+
+  .facial-imagen .flyer {
+    height: auto;
+  }
+
+  .unas-interno {
+    gap: 24px;
   }
 
   .hero-interno {
