@@ -510,7 +510,9 @@ section {
 }
 
 .unas-texto {
-  flex: 3;
+  flex: 1;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 /* Cita y garantía */
